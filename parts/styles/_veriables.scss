@@ -1,0 +1,21 @@
+:root {
+    --border-radius: 10px;
+    --border: 1px solid rgb(62, 62, 62);
+    --font-family-base: 'Roboto', sans-serif;
+    --color-button: rgb(24, 24, 255);
+    --color-dark: black;
+    --color-gray: rgb(25, 29, 49);
+    --color-light: white;
+    --color-bg: rgb(0, 0, 31);
+    --color-red:rgb(255, 82, 82);
+
+    --container-width: 1240px;
+    --container-padding-x: 20px;
+
+    --section-padding-y: 70px;
+
+    --input-height: 59px;
+    --button-height: 68px;
+
+    --transition-duration: 0.2s;
+}

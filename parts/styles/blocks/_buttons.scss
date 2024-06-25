@@ -1,0 +1,28 @@
+.button {
+    @include reset-button;
+
+    padding: 15px 34px;
+    color: var(--color-light);
+    font-weight: 700;
+    background-color: var(--color-button);
+    border-radius: var(--border-radius);
+
+    @include hover {
+        background-color: var(--color-light);
+        color: var(--color-dark);
+    }
+
+    &:active {
+        transform: scale(.95);
+    }
+
+    &--second {
+        
+        background-color: var(--color-light);
+        color: var(--color-dark);
+
+        @include hover {
+            background-color: var(--color-red);
+        }
+    }
+}
