@@ -7,4 +7,16 @@
     &__logo {
         margin-right: auto;
     }
+
+    &__button {
+        @include reset-button;
+
+        padding: 5px 10px;
+        background-color: rgb(205, 205, 255);
+        border-radius: 5px;
+
+        @include hover {
+            background-color: rgba(205, 205, 255, 0.676);
+        }
+    }
 }

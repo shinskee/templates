@@ -1,8 +1,32 @@
 .menu {
+
+    @include mobile {
+        transform: translatex(100%);
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(205, 205, 255, 0.68);
+        transition-duration: 0.3s;
+
+        &.active {
+            transform: translateY(0);
+        }
+    }
+
     &__list {
         display: flex;
         justify-content: center;
         column-gap: 20px;
+
+        @include mobile {
+            height: 80vh;
+            flex-direction: column;
+            row-gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__link {

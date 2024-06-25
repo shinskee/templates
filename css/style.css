@@ -126,6 +126,12 @@ body {
     Унифицированный интерлиньяж
    */
   line-height: 1.5;
+  /**
+    Блок скролла при открытом мобильном меню
+   */
+}
+body.lock {
+  overflow: hidden;
 }
 
 /**
@@ -199,11 +205,35 @@ svg * {
   }
 }
 
+@media (max-width: 767px) {
+  .menu {
+    transform: translatex(100%);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(205, 205, 255, 0.68);
+    transition-duration: 0.3s;
+  }
+  .menu.active {
+    transform: translateY(0);
+  }
+}
 .menu__list {
   display: flex;
   justify-content: center;
   -moz-column-gap: 20px;
        column-gap: 20px;
+}
+@media (max-width: 767px) {
+  .menu__list {
+    height: 80vh;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .menu__link {
   text-decoration: none;
@@ -219,6 +249,24 @@ svg * {
 }
 .header__logo {
   margin-right: auto;
+}
+.header__button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  background-color: rgb(205, 205, 255);
+  border-radius: 5px;
+}
+@media (hover: hover) {
+  .header__button:hover {
+    background-color: rgba(205, 205, 255, 0.676);
+  }
+}
+@media (hover: none) {
+  .header__button:active {
+    background-color: rgba(205, 205, 255, 0.676);
+  }
 }
 
 .menu-toggle {
