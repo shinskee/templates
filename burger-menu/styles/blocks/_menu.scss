@@ -9,11 +9,11 @@
         left: 0;
         background-color: rgba(205, 205, 255, 0.68);
         transition-duration: 0.3s;
-
-        &.active {
+    }
+    
+    &.active {
             transform: translateY(0);
         }
-    }
 
     &__list {
         display: flex;
