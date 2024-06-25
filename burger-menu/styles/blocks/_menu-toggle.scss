@@ -1,0 +1,55 @@
+.menu-toggle {
+    @include reset-button;
+    @include square(48px);
+
+    position: relative;
+    border-radius: 2px;
+
+    @include hover {
+        opacity: .7;
+    }
+
+    span {
+        display: block;
+        margin: auto;
+        border-radius: 2px;
+        width: 60%;
+        height: 2px;
+        background-color: black;
+
+        &::after,
+        &:before {
+            @include abs-center;
+
+            content: '';
+            width: 60%;
+            height: 2px;
+            background-color: black;
+            border-radius: 2px;
+            transition-duration: 0.3s;
+        }
+
+        &:before {
+            top: 70%;
+        }
+
+        &::after {
+            top: 30%;
+        }
+    }
+}
+
+.menu-toggle.active {
+    span {
+        background-color: transparent !important;
+    &::after {
+        top: 50%;
+        rotate: 45deg;
+    }
+
+    &::before {
+        top: 50%;
+        rotate: -45deg;
+    }
+    }
+}
