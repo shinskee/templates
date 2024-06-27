@@ -1,5 +1,6 @@
 .navbar {
     position: sticky;
+    font-weight: 600;
     top: 30px;
     padding: 30px;
     display: flex;
@@ -8,13 +9,14 @@
     row-gap: 10px;
     // border: var(--border);
     border-radius: var(--border-radius);
-    background-color: var(--color-gray);
+    border: var(--border);
+    background-color: var(--color-hover-2);
 
     &__link {
-        color: var(--color-light);
+        color: var(--color-primary);
 
         @include hover {
-            color: var(--color-red);
+            color: var(--color-active);
         }
     }
 }

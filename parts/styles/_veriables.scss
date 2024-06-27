@@ -1,12 +1,16 @@
 :root {
     --border-radius: 10px;
-    --border: 1px solid rgb(62, 62, 62);
+    --border: 1px solid #0D0D0D;
     --font-family-base: 'Roboto', sans-serif;
-    --color-button: rgb(24, 24, 255);
-    --color-dark: black;
+    --color-button: #0D0D0D;
+    --color-hover: #353535;
+    --color-active: #505050;
+    --color-button-2:#FFFFFF;
+    --color-hover-2: #F5F5F5;
+    --color-active-2: #E7E7E7;
     --color-gray: rgb(25, 29, 49);
     --color-light: white;
-    --color-bg: rgb(0, 0, 31);
+    --color-primary: #0D0D0D;
     --color-red:rgb(255, 82, 82);
 
     --container-width: 1240px;
